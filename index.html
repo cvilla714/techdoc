@@ -1,260 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>VBA Programming</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" type="text/css" href="techdoc.css">
-              
-   </head>
+  <head>
+    <title>VBA Programming</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
 
-    <body>
-            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-            
-            <nav id="navbar">
-                <header>VBA Programming</header>
-                <ul>
-                  <li><a class="nav-link" href="#What_is_VBA">What is VBA</a></li>
-                  <li><a class="nav-link" href="#How_do_i_start_with_VBA_Excel">How do i start with VBA Excel</a></li>
-                  <li><a class="nav-link" href="#What_can_I_do">What can I do</a></li>
-                  <li><a class="nav-link" href="#Are_VB_and_VBA_the_same">Are VB and VBA the same</a></li>
-                  <li><a class="nav-link" href="#What_is_the_difference_between_a_macro_a_script_and_VBA">What is the difference between a macro a script and VBA</a></li>
-                  <li><a class="nav-link" href="#What_does_a_VBA_Developer_do?">What does a VBa Developer do?</a></li>
-                  <li><a class="nav-link" href="#Why_is_VBA_important">Why is VBA important</a></li>
-                  <li><a class="nav-link" href="#Is_VBA_a_good_programming_language?">Is VBA a good programming language?</a></li>
-                   <li><a class="nav-link" href="#Funtions">Funtions</a></li>
-                  <li><a class="nav-link" href="#Find_the_Last_Row">Find the Last Row</a></li>
-                  <li><a class="nav-link" href="#Loops">Loops</a></li>
-                </ul>
-              </nav>
-            
-            <main id="main-doc">
-              <section class="main-section" id="What_is_VBA">
-                <header>What is VBA</header>
-                <article>
-                  <p>
-                    If you’ve ever used macros in Excel, you’ve used Visual Basic for Applications (VBA). VBA is human-readable(and editable) programming code that gets generated
-                     when you record a macro.  When you run a macro it’s this code that Excel reads to replay your actions.
-                    The following is a series of frequently asked questions about VBA, with answers for both newcomers to Excel macros and seasoned programmers.
-                  </p>  
-                    <p class="head">What is VBA used for in Excel?</p>
-                         <ul>
-                           <li>VBA is used to write macros, which automate simple and complex tasks in Excel.</li>
-                           <li>Users of Microsoft Excel will often find themselves repeating the same series of tasks over and over again</li>
-                           <li>Sometimes these are minor tasks like copy-pasting subsets of data to different sheets</li>
-                            <li>sometimes the tasks are more complex like uploading data to a website</li>
-                            <li>With VBA, macros can be programmed to automate tasks like these, turning a series of manual operations into a single button click.</li>
-                         </ul>                   
-                </article>
-               </section>
-                <section class="main-section" id="How_do_i_start_with_VBA_Excel">
-                <header>How do i start with VBA Excel</header>
-                <article>
-                  <p>
-                    The easiest way to get started with macros is to record them using the Macro Recorder built into Excel.  
-                    The macro recorder generates VBA code which you can read and edit, giving you a stepping-stone to learn how to code your own macros from scratch.
-                  </p>  
-                    <p class="head">How can I access VBA code?</p>
-                         <ul>
-                           <li>The VBA editor can be opened at any time by pressing the ALT+F11 keyboard shortcut.
-                           From here, you can access the code for all open workbooks.
-                           </li>
-                           <li>You can double-click any workbook, sheet, or module object in the Project window to show the VBA code contained in it
-                            Recorded macros will always appear in modules, which is where you’ll typically want to write your own macros too.
-                          </li>
-                         </ul>                   
-                </article>
-               </section>
-               <section class="main-section" id="What_can_I_do">
-                 <header>What can I do</header>
-                  <article>
-                     <p class="head">Advantages of using VBA Code</p>
-                           <ul>
-                             <li>First of all: if there’s something you can do in Excel, you can write VBA code to do the same thing.  
-                               If you learn the commands (using the macro recorder or online resources), you can string together 
-                               several actions together in a single macro.
-                             </li>
-                             <li>Second: you can use VBA to write user-defined functions for use in worksheet
-                                <code>formulas – much like the “=SUM()” function, for example.</code>  
-                                Although Excel already packs a large variety of functions, if you find yourself wanting a function that’s more specific 
-                                to your industry or workplace, you can add it with VBA.
-                            </li>
-                            <li>
-                              Third: you can use VBA to add logic (If statements) and loops (repeat actions) to your macros. 
-                              This means that a macro can be more than a recording of actions – it can be a real program with smart repetition and decision-making.
-                            </li>
-                            <li>
-                              Fourth: VBA allows you to build user interfaces, giving users an easier way to interact with your macros.  
-                              These interfaces can be simple buttons on a worksheet, or complex UserForms with rich controls like TreeViews and FlexGrids.
-                            </li>
-                            <li>
-                              Fifth but not finally: VBA allows you to harness almost any resource your computer or the internet by using external DLL libraries.  
-                              You can automate a lot more than Excel this way, like accessing web services and databases, parsing XML files, 
-                              interoperating with other Microsoft Office applications, and much, much more.
-                            </li>
-                           </ul>                   
-                  </article>
-               </section>
-               <section class="main-section" id="Are_VB_and_VBA_the_same">
-                  <header>Are VB and VBA the same</header>
-                    <article>
-                          <p class="head">Diffences between VB and VBA</p>
-                            The VBA language is identical to Visual Basic 6.0.  If you have experience writing VB6 code, you can write VBA.
-                            The VB Editor in Excel is a stripped-down version of the VB6 editor, with similar debugging capabilities and components 
-                            like the ‘Project’ and ‘Properties’ windows. 
-                          </p>
-                         <p>
-                            The Form editor is also very similar, although it has some limitations (like the inability to create control arrays).
-                            Less similar to VBA is Visual Basic .NET.  Although these languages share many of the same keywords and syntaxes, 
-                            the code between these languages is less interoperable.  You wouldn’t have to re-write much (if anything) to port a procedure 
-                            from VB6 to VBA, but you couldn’t do the same from VB.NET.
-                        </p>     
-                      </article>
-               </section>
-               <section class="main-section" id="What_is_the_difference_between_a_macro_a_script_and_VBA">
-                    <header>What is the difference between a macro a script and VBA</header>
-                    <article>
-                      <p class="head">Macro vs Script vs VBA</p>
-                        VBA is just the language that macros are written with.  If your macro is a story, VBA is the grammar and dictionary it’s written with.
-                        Scripts use a limited subset of the Visual Basic language and are used for different purposes. Macros are stored inside Excel workbook 
-                        files and can only be run from inside Excel.  They’re typically used to automate various Excel functions and add extra functionality to workbooks.
-                        Scripts are stored in text files using the .VBS extension and can be run from inside Windows or executed by other programs.  
-                        Sysadmins will use scripts to automate certain administrative tasks on a computer or network.
-                      </p>
-                    </article>
-               </section>
-               <section class="main-section" id="What_does_a_VBA_Developer_do?">
-                <header>What does a VBa Developer do?</header>
-                    <article>
-                        <p class="head">Role of a Developer</p>
-                        <p>Often, people who create macros aren’t developers  
-                          <ul>
-                            <li>they’re analyst</li>
-                            <li>traders</li> 
-                            <li>accountants</li>
-                            <li>or scientists</li>
-                          </ul>
-                             who have had training in programming and use VBA on more of an ad-hoc basis.
-                            People who focus on VBA development tend to create more refined tools – they create 
-                            <ul>
-                              <li>Add-ins</li>
-                              <li>User interfaces with Forms</li>
-                              <li>Interactive dashboards</li>
-                              <li>report generators, and more.</li>
-                            </ul>
-                          </p>
-                     </article>
-                  </section>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-                  <section class="main-section" id="Why_is_VBA_important">
-                    <header>Why is VBA important</header>
-                        <article>
-                            <p class="head">Importance</p>
-                            <p>
-                              VBA is included as standard in all Microsoft Office applications, including Excel.  Excel is one of the most popular programs 
-                              in the world and finds use in a wide variety of fields and workplaces, all with their own unique workflows and use-cases.
-                              By not using automation, countless work-hours are wasted every week performing boring, repetitive tasks at a human speed. 
-                              Automation with VBA can perform the same tasks at the computer’s lightning-quick pace, letting users focus on the important
-                              aspects of their work, being more productive – and maybe getting out of the office a little earlier!
-                              </p>
-                         </article>
-                      </section>
-                      <section class="main-section" id="Is_VBA_a_good_programming_language?">
-                        <header>Is VBA a good programming language?</header>
-                            <article>
-                                <p class="head">VBA can’t be used to create standalone programs</p>
-                                <p>
-                                  VBA has the typical programming elements like variables, arrays, functions, decisions and loops.  It has a syntax that’s easy to read, 
-                                  and can harness a lot of power from Windows and other services.
-                                  On the downside, error-handling isn’t very elegant in VBA.  While other languages use “try-catch-finally” code blocks, 
-                                  VBA uses “On Error” statements to modify how macros behave when an error occurs.
-                                  Additionally, VBA can’t be used to create standalone programs, web sites or services, and it can’t interface with newer programming 
-                                  APIs like the .NET platfor
-                                  </p>
-                             </article>
-                          </section>
-                          <section class="main-section" id="Funtions">
-                            <header>Funtions</header>
-                                <article>
-                                    <p class="head">Things you can do</p>
-                                    <p>The VBA InputBox function displays a dialog box, prompting the user for input, and containing an OK button and a Cancel button.
-                                       The function returns a text string containing the user's input if the OK button is selected or an empty text string if the Cancel button is selected.
-                                      The syntax of the InputBox function is:
-                                      <code>InputBox( Prompt, [Title], [Default], [XPos], [YPos], [HelpFile], [Context] )</code>
-                                      <img src="inputbox.png" alt="inputbox dialog">
-                                    </p>
-                                    <p>
-                                      The Excel VBA InStr function returns the position of a substring within a string, as an integer.
-                                      If the substring is not found, the function returns the value 0.
-                                      The syntax of the InStr function is:
-                                      <code>InStr( [Start], String1, String2, [Compare] )</code>
-                                      <img src="instr.png" alt="instring_function">
-                                    </p>
-                                     <p>
-                                      The VBA Round function rounds a numbers to a specified number of decimal places.
-                                      The syntax of the function is:
-                                      <code>Round( Number, [NumDigitsAfterDecimal] )</code>
-                                      <img src="round.png" alt="rounding">
-                                    </p> 
-                                   <p>
-                                    The VBA UCase function converts a supplied String into upper case text.
-                                    The syntax of the function is:
-                                    <code>UCase( String )</code>
-                                    <img src="ucase.png" alt="uppercase">
-                                   </p>
-                                    
-                                 </article>
-                              </section>
-                              <section class="main-section" id="Find_the_Last_Row">
-                                <header>Find the Last Row</header>
-                                    <article>
-                                        <p class="head">Last Row</p>
-                                        Finding the last used row, column, or cell is one very common task when writing macros and VBA applications. 
-                                        Like anything in Excel and VBA, there are many different ways to accomplish this.
-                                        Choosing the right method mostly depends on what your data looks like.
-                                        The Range.End() Method :
-                                        The Range.End method is very similar to pressing the Ctrl+Arrow Key keyboard shortcut.  
-                                        In VBA we can use this method to find the last non-blank cell in a single row or column.
-                                        <code>Sub Range_End_Method()
-                                          'Finds the last non-blank cell in a single row or column
-                                          
-                                          Dim lRow As Long
-                                          Dim lCol As Long
-                                              
-                                              'Find the last non-blank cell in column A(1)
-                                              lRow = Cells(Rows.Count, 1).End(xlUp).Row
-                                              
-                                              'Find the last non-blank cell in row 1
-                                              lCol = Cells(1, Columns.Count).End(xlToLeft).Column
-                                              
-                                              MsgBox "Last Row: " & lRow & vbNewLine & _
-                                                      "Last Column: " & lCol
-                                            
-                                          End Sub</code>
-                                    </article>
-                                  </section>
-                                  <section class="main-section" id="Loops">
-                                    <header>Loops</header>
-                                        <article>
-                                            <p class="head">Using Loops</p>
-                                           To get the most out of Excel and VBA, you need to know how to use loops efficiently.
-                                           In VBA, loops allow you to go through a set of objects/values and analyze it one by one. 
-                                           You can also perform specific tasks for each loop.
-                                           Here are some more practical examples where VBA loops can be useful:
-                                           <ul>
-                                              <li>Looping through a range of cells and analyzing each cell (highlight cells with a specific text in it).</li>
-                                              <li>Loop through all the open workbooks (and save each workbook or close all except the active workbook).</li>
-                                              <li>Loop through all the characters in a cell (and extract the numeric part from a string).</li>
-                                              <li>Loop through all the values an array.</li>
-                                              <li>Loop through all the charts/objects (and give a border or change the background color).</li>
-                                           </ul>
-                                           <p>exmaple of loops</p>
-                                           <img src="forloop.png" alt="forloop">
-                                        </article>
-                                      </section>
+    <nav id="navbar">
+      <header>VBA Programming</header>
+      <ul>
+        <li><a class="nav-link" href="#What_is_VBA">What is VBA</a></li>
+        <li><a class="nav-link" href="#How_do_i_start_with_VBA_Excel">How do i start with VBA Excel</a></li>
+        <li><a class="nav-link" href="#What_can_I_do">What can I do</a></li>
+        <li><a class="nav-link" href="#Are_VB_and_VBA_the_same">Are VB and VBA the same</a></li>
+        <li><a class="nav-link" href="#What_is_the_difference_between_a_macro_a_script_and_VBA">What is the difference between a macro a script and VBA</a></li>
+        <li><a class="nav-link" href="#What_does_a_VBA_Developer_do?">What does a VBa Developer do?</a></li>
+        <li><a class="nav-link" href="#Why_is_VBA_important">Why is VBA important</a></li>
+        <li><a class="nav-link" href="#Is_VBA_a_good_programming_language?">Is VBA a good programming language?</a></li>
+        <li><a class="nav-link" href="#Funtions">Funtions</a></li>
+        <li><a class="nav-link" href="#Find_the_Last_Row">Find the Last Row</a></li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+      </ul>
+    </nav>
 
-            </main>
-    </body>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_VBA">
+        <header>What is VBA</header>
+        <article>
+          <p>
+            If you’ve ever used macros in Excel, you’ve used Visual Basic for Applications (VBA). VBA is human-readable(and editable) programming code that gets generated when you record a macro. When you run a macro it’s this code that Excel reads to replay your actions. The following is a series
+            of frequently asked questions about VBA, with answers for both newcomers to Excel macros and seasoned programmers.
+          </p>
+          <p class="head">What is VBA used for in Excel?</p>
+          <ul>
+            <li>VBA is used to write macros, which automate simple and complex tasks in Excel.</li>
+            <li>Users of Microsoft Excel will often find themselves repeating the same series of tasks over and over again</li>
+            <li>Sometimes these are minor tasks like copy-pasting subsets of data to different sheets</li>
+            <li>sometimes the tasks are more complex like uploading data to a website</li>
+            <li>With VBA, macros can be programmed to automate tasks like these, turning a series of manual operations into a single button click.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="How_do_i_start_with_VBA_Excel">
+        <header>How do i start with VBA Excel</header>
+        <article>
+          <p>The easiest way to get started with macros is to record them using the Macro Recorder built into Excel. The macro recorder generates VBA code which you can read and edit, giving you a stepping-stone to learn how to code your own macros from scratch.</p>
+          <p class="head">How can I access VBA code?</p>
+          <ul>
+            <li>The VBA editor can be opened at any time by pressing the ALT+F11 keyboard shortcut. From here, you can access the code for all open workbooks.</li>
+            <li>You can double-click any workbook, sheet, or module object in the Project window to show the VBA code contained in it Recorded macros will always appear in modules, which is where you’ll typically want to write your own macros too.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="What_can_I_do">
+        <header>What can I do</header>
+        <article>
+          <p class="head">Advantages of using VBA Code</p>
+          <ul>
+            <li>First of all: if there’s something you can do in Excel, you can write VBA code to do the same thing. If you learn the commands (using the macro recorder or online resources), you can string together several actions together in a single macro.</li>
+            <li>
+              Second: you can use VBA to write user-defined functions for use in worksheet
+              <code>formulas – much like the “=SUM()” function, for example.</code>
+              Although Excel already packs a large variety of functions, if you find yourself wanting a function that’s more specific to your industry or workplace, you can add it with VBA.
+            </li>
+            <li>Third: you can use VBA to add logic (If statements) and loops (repeat actions) to your macros. This means that a macro can be more than a recording of actions – it can be a real program with smart repetition and decision-making.</li>
+            <li>Fourth: VBA allows you to build user interfaces, giving users an easier way to interact with your macros. These interfaces can be simple buttons on a worksheet, or complex UserForms with rich controls like TreeViews and FlexGrids.</li>
+            <li>
+              Fifth but not finally: VBA allows you to harness almost any resource your computer or the internet by using external DLL libraries. You can automate a lot more than Excel this way, like accessing web services and databases, parsing XML files, interoperating with other Microsoft Office
+              applications, and much, much more.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Are_VB_and_VBA_the_same">
+        <header>Are VB and VBA the same</header>
+        <article>
+          <p class="head">
+            Diffences between VB and VBA The VBA language is identical to Visual Basic 6.0. If you have experience writing VB6 code, you can write VBA. The VB Editor in Excel is a stripped-down version of the VB6 editor, with similar debugging capabilities and components like the ‘Project’ and
+            ‘Properties’ windows.
+          </p>
+          <p>
+            The Form editor is also very similar, although it has some limitations (like the inability to create control arrays). Less similar to VBA is Visual Basic .NET. Although these languages share many of the same keywords and syntaxes, the code between these languages is less interoperable.
+            You wouldn’t have to re-write much (if anything) to port a procedure from VB6 to VBA, but you couldn’t do the same from VB.NET.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="What_is_the_difference_between_a_macro_a_script_and_VBA">
+        <header>What is the difference between a macro a script and VBA</header>
+        <article>
+          <p class="head">
+            Macro vs Script vs VBA VBA is just the language that macros are written with. If your macro is a story, VBA is the grammar and dictionary it’s written with. Scripts use a limited subset of the Visual Basic language and are used for different purposes. Macros are stored inside Excel
+            workbook files and can only be run from inside Excel. They’re typically used to automate various Excel functions and add extra functionality to workbooks. Scripts are stored in text files using the .VBS extension and can be run from inside Windows or executed by other programs. Sysadmins
+            will use scripts to automate certain administrative tasks on a computer or network.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="What_does_a_VBA_Developer_do?">
+        <header>What does a VBa Developer do?</header>
+        <article>
+          <p class="head">Role of a Developer</p>
+          <p>Often, people who create macros aren’t developers</p>
+          <ul>
+            <li>they’re analyst</li>
+            <li>traders</li>
+            <li>accountants</li>
+            <li>or scientists</li>
+          </ul>
+          <p>who have had training in programming and use VBA on more of an ad-hoc basis. People who focus on VBA development tend to create more refined tools – they create</p>
+          <ul>
+            <li>Add-ins</li>
+            <li>User interfaces with Forms</li>
+            <li>Interactive dashboards</li>
+            <li>report generators, and more.</li>
+          </ul>
+        </article>
+      </section>
 
+      <section class="main-section" id="Why_is_VBA_important">
+        <header>Why is VBA important</header>
+        <article>
+          <p class="head">Importance</p>
+          <p>
+            VBA is included as standard in all Microsoft Office applications, including Excel. Excel is one of the most popular programs in the world and finds use in a wide variety of fields and workplaces, all with their own unique workflows and use-cases. By not using automation, countless
+            work-hours are wasted every week performing boring, repetitive tasks at a human speed. Automation with VBA can perform the same tasks at the computer’s lightning-quick pace, letting users focus on the important aspects of their work, being more productive – and maybe getting out of the
+            office a little earlier!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Is_VBA_a_good_programming_language?">
+        <header>Is VBA a good programming language?</header>
+        <article>
+          <p class="head">VBA can’t be used to create standalone programs</p>
+          <p>
+            VBA has the typical programming elements like variables, arrays, functions, decisions and loops. It has a syntax that’s easy to read, and can harness a lot of power from Windows and other services. On the downside, error-handling isn’t very elegant in VBA. While other languages use
+            “try-catch-finally” code blocks, VBA uses “On Error” statements to modify how macros behave when an error occurs. Additionally, VBA can’t be used to create standalone programs, web sites or services, and it can’t interface with newer programming APIs like the .NET platfor
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Funtions">
+        <header>Funtions</header>
+        <article>
+          <p class="head">Things you can do</p>
+          <p>
+            The VBA InputBox function displays a dialog box, prompting the user for input, and containing an OK button and a Cancel button. The function returns a text string containing the user's input if the OK button is selected or an empty text string if the Cancel button is selected. The syntax
+            of the InputBox function is:
+            <code>InputBox( Prompt, [Title], [Default], [XPos], [YPos], [HelpFile], [Context] )</code>
+            <img src="/images/inputbox.png" alt="inputbox dialog" />
+          </p>
+          <p>
+            The Excel VBA InStr function returns the position of a substring within a string, as an integer. If the substring is not found, the function returns the value 0. The syntax of the InStr function is:
+            <code>InStr( [Start], String1, String2, [Compare] )</code>
+            <img src="/images/instr.png" alt="instring_function" />
+          </p>
+          <p>
+            The VBA Round function rounds a numbers to a specified number of decimal places. The syntax of the function is:
+            <code>Round( Number, [NumDigitsAfterDecimal] )</code>
+            <img src="/images/round.png" alt="rounding" />
+          </p>
+          <p>
+            The VBA UCase function converts a supplied String into upper case text. The syntax of the function is:
+            <code>UCase( String )</code>
+            <img src="/images/ucase.png" alt="uppercase" />
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Find_the_Last_Row">
+        <header>Find the Last Row</header>
+        <article>
+          <p class="head">Last Row</p>
+          Finding the last used row, column, or cell is one very common task when writing macros and VBA applications. Like anything in Excel and VBA, there are many different ways to accomplish this. Choosing the right method mostly depends on what your data looks like. The Range.End() Method : The
+          Range.End method is very similar to pressing the Ctrl+Arrow Key keyboard shortcut. In VBA we can use this method to find the last non-blank cell in a single row or column.
+          <code
+            >Sub Range_End_Method() 'Finds the last non-blank cell in a single row or column Dim lRow As Long Dim lCol As Long 'Find the last non-blank cell in column A(1) lRow = Cells(Rows.Count, 1).End(xlUp).Row 'Find the last non-blank cell in row 1 lCol = Cells(1,
+            Columns.Count).End(xlToLeft).Column MsgBox "Last Row: " & lRow & vbNewLine & _ "Last Column: " & lCol End Sub</code
+          >
+        </article>
+      </section>
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <article>
+          <p class="head">Using Loops</p>
+          To get the most out of Excel and VBA, you need to know how to use loops efficiently. In VBA, loops allow you to go through a set of objects/values and analyze it one by one. You can also perform specific tasks for each loop. Here are some more practical examples where VBA loops can be
+          useful:
+          <ul>
+            <li>Looping through a range of cells and analyzing each cell (highlight cells with a specific text in it).</li>
+            <li>Loop through all the open workbooks (and save each workbook or close all except the active workbook).</li>
+            <li>Loop through all the characters in a cell (and extract the numeric part from a string).</li>
+            <li>Loop through all the values an array.</li>
+            <li>Loop through all the charts/objects (and give a border or change the background color).</li>
+          </ul>
+          <p>exmaple of loops</p>
+          <img src="/images/forloop.png" alt="forloop" />
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
